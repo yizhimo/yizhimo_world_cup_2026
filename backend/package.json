@@ -1,0 +1,33 @@
+{
+  "name": "wc-predictor-backend",
+  "version": "1.0.0",
+  "description": "2026 World Cup prediction and betting system - backend",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "download-data": "tsx scripts/download-data.ts",
+    "scrape-odds": "tsx scripts/scrape-odds.ts",
+    "update-all": "tsx scripts/update-all.ts",
+    "backtest": "tsx scripts/backtest.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "express": "^4.21.0",
+    "iconv-lite": "^0.7.2",
+    "node-cron": "^3.0.3",
+    "sql.js": "^1.12.0",
+    "tsx": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^16.18.0",
+    "@types/node-cron": "^3.0.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
